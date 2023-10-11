@@ -11,35 +11,16 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    'prettier/prettier': ['error', './prettierrc'],
-    'import/order': [
-      1,
+    'prettier/prettier': [
+      'error',
       {
-        groups: ['external', 'builtin', 'internal', 'sibling', 'parent', 'index'],
-        pathGroups: [
-          {
-            pattern: 'components',
-            group: 'internal',
-          },
-          {
-            pattern: 'common',
-            group: 'internal',
-          },
-          {
-            pattern: 'routes/**',
-            group: 'internal',
-          },
-          {
-            pattern: 'assets/**',
-            group: 'internal',
-            position: 'after',
-          },
-        ],
-        pathGroupsExcludedImportTypes: ['internal'],
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
+        endOfLine: 'auto',
+        semi: false,
+        singleQuote: true,
+        arrowParens: 'always',
+        tabWidth: 2,
+        trailingComma: 'es5',
+        printWidth: 130,
       },
     ],
   },

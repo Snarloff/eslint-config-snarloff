@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'plugin:tailwindcss/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -15,6 +15,8 @@ module.exports = {
   },
   plugins: ['jsx-a11y', '@typescript-eslint'],
   rules: {
+    'tailwindcss/no-custom-classname': 'off',
+    'tailwindcss/classnames-order': 'error',
     'prettier/prettier': [
       'error',
       {
@@ -42,6 +44,10 @@ module.exports = {
     'react/no-unknown-property': 'error',
   },
   settings: {
+    tailwindcss: {
+      callees: ['cn'],
+      config: 'tailwind.config.ts',
+    },
     react: {
       version: 'detect',
     },

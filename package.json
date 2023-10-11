@@ -1,10 +1,12 @@
 {
   "name": "@snarloff/eslint-config",
-  "author": "Snarloff",
-  "license": "MIT",
+  "version": "1.0.3",
+  "description": "Este pacote é uma configuração pré-definida do ESLint e Prettier para projetos Node.js e Next.js, com base no pacote desenvolvido pela Rocketseat. Ele foi criado para facilitar a configuração do linter em seus projetos e garantir a consistência do código em toda a equipe.",
   "main": "index.js",
-  "version": "1.0.1",
-  "description": "ESLint config for Snarloff",
+  "license": "MIT",
+  "repository": {
+    "url": "snarloff/eslint-config"
+  },
   "peerDependencies": {
     "eslint": "^8.0.0",
     "typescript": ">=4"
@@ -14,23 +16,23 @@
       "optional": true
     }
   },
-  "repository": {
-    "url": "snarloff/eslint-config"
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-prettier": "5.0.0-alpha.2",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^3.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.7.5",
-    "@typescript-eslint/parser": "^6.7.5",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-n": "^16.1.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.0.3",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "typescript": "^5.2.2"
   }
 }
