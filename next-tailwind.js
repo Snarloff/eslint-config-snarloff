@@ -15,6 +15,25 @@ module.exports = {
   },
   plugins: ['jsx-a11y', '@typescript-eslint'],
   rules: {
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'import',
+        format: ['camelCase', 'PascalCase'],
+      },
+    ],
+    'camelcase': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
     'tailwindcss/no-custom-classname': 'off',
     'tailwindcss/classnames-order': 'error',
     'prettier/prettier': [

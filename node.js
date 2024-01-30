@@ -11,6 +11,24 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'import',
+        format: ['camelCase', 'PascalCase'],
+      },
+    ],
+    'camelcase': 'off',
     'prettier/prettier': [
       'error',
       {

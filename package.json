@@ -1,20 +1,11 @@
 {
   "name": "@snarloff/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Este pacote é uma configuração pré-definida do ESLint e Prettier para projetos Node.js e Next.js, com base no pacote desenvolvido pela Rocketseat. Ele foi criado para facilitar a configuração do linter em seus projetos e garantir a consistência do código em toda a equipe.",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "url": "snarloff/eslint-config"
-  },
-  "peerDependencies": {
-    "eslint": "^8.0.0",
-    "typescript": ">=4"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
