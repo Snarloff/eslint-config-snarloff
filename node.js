@@ -28,7 +28,7 @@ module.exports = {
         format: ['camelCase', 'PascalCase'],
       },
     ],
-    'camelcase': 'off',
+    camelcase: 'off',
     'prettier/prettier': [
       'error',
       {
